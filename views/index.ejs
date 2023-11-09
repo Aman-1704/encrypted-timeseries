@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Series Data</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <ul id="dataList">
+      <% data.forEach(item => { %>
+        <li>Name: <%= item.name %>, Origin: <%= item.origin %>, Destination: <%= item.destination %>, Timestamp: <%= item.timestamp %></li>
+      <% }); %>
+    </ul>
+  </div>
+  <script src="/assets/index.js"></script>
+</body>
+
+</html>
